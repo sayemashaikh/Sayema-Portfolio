@@ -1,0 +1,537 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+/* Custom Scroll Bar CSS */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8189ad;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4874;
+}
+
+/* navbar styling */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+nav.sticky {
+  background: #3f4874;
+  padding: 13px 0;
+}
+
+nav .navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  font-weight: 500;
+  font-size: 35px;
+  color: #3f4874;
+}
+
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+
+nav .navbar .menu {
+  display: flex;
+  position: relative;
+}
+
+nav .navbar .menu li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3f4874;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover {
+  color: #3f4874;
+}
+
+nav.sticky .menu a {
+  color: #FFF;
+}
+
+nav.sticky .menu a:hover {
+  color: #a1a8d1;
+}
+
+.navbar .media-icons a {
+  color: #3f4874;
+  font-size: 18px;
+  margin: 0 6px;
+}
+
+nav.sticky .media-icons a {
+  color: #FFF;
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+.navbar .menu .cancel-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+nav .menu-btn {
+  color: #3f4874;
+}
+
+nav.sticky .menu-btn {
+  color: #FFF;
+}
+
+.navbar .menu .menu-btn {
+  color: #fff;
+}
+
+/* home section styling */
+
+
+/* About Section Styling */
+/* Those Elements Where We Have Apply Same CSS,
+ I'm Selecting Directly 'Section Tag' and 'Class'  */
+section {
+  padding-top: 40px;
+
+}
+
+section .content {
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span {
+  color: #3f4874;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+section .title span::before,
+section .title span::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #3f4874;
+  left: 0;
+  bottom: 0;
+}
+
+section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+section .topic {
+  color: #0E2431;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+
+
+
+section .button {
+  margin: 16px 0;
+}
+
+section .button button {
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #3f4874;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section .button button:hover {
+  border-color: #3f4874;
+  background-color: #fff;
+  color: #3f4874;
+}
+
+
+/* Contact Me CSS */
+.contact{
+  background: #fff;
+}
+
+.contact .content {
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.contact .text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* Footer CSS */
+footer {
+  background: #3f4874;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #3f4874;
+  padding: 7px 12px;
+  ;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+/* Responsive Media Query */
+@media (max-width: 1190px) {
+  section .content {
+    width: 85%;
+  }
+}
+
+
+
+
+@media (max-width: 750px) {
+  nav .navbar {
+    width: 90%;
+  }
+
+  nav .navbar .menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #1c1214;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+
+  .navbar.active .menu {
+    left: 0;
+  }
+
+  nav .navbar .menu a {
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 15px 0;
+  }
+
+  nav.sticky .menu a:hover {
+    color: #3f4874;
+  }
+
+  nav .navbar .media-icons {
+    display: none;
+  }
+
+  nav .menu-btn,
+  .navbar .menu .cancel-btn {
+    display: block;
+  }
+
+  .home .text-two {
+    font-size: 65px;
+  }
+
+  .home .text-three {
+    font-size: 35px;
+  }
+
+  
+
+  .contact .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .text-two {
+    font-size: 55px;
+  }
+
+  .home .text-three {
+    font-size: 33px;
+  }
+
+ 
+}
+
+/* Reset margins, paddings, and box-sizing for all elements */
+.edutime * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* Set font family for the entire section */
+}
+
+/* Smooth scrolling behavior */
+.edutime html {
+    scroll-behavior: smooth;
+}
+
+/* Set background color for the body */
+.edutime body {
+    background: #3f4874; /* Dark red background */
+}
+
+/* Styling for text selection */
+.edutime::selection {
+    color: #fff; /* White text on selection */
+    background: #3f4874; /* Dark grey background on selection */
+}
+
+/* Wrapper styles for content alignment and spacing */
+.edutime .wrapper {
+    max-width: 1080px; /* Maximum width of the wrapper */
+    margin: 50px auto; /* Center the wrapper with top and bottom margin */
+    padding: 0 20px; /* Horizontal padding */
+    position: relative; /* Positioning context for absolute elements */
+}
+
+/* Vertical center line */
+.edutime .wrapper .center-line {
+    position: absolute; /* Absolute positioning */
+    height: 100%; /* Full height of the wrapper */
+    width: 4px; /* Width of the line */
+    background: #3f4874; /* White color */
+    left: 50%; /* Center horizontally */
+    top: 20px; /* Distance from the top */
+    transform: translateX(-50%); /* Center the line */
+}
+
+/* Flexbox styles for rows */
+.edutime .wrapper .row {
+    display: flex; /* Enable flexbox layout */
+}
+
+/* Row alignment */
+.edutime .wrapper .row-1 {
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.edutime .wrapper .row-2 {
+    justify-content: flex-end; /* Align items to the end */
+}
+
+/* Section styling within rows */
+.edutime .wrapper .row section {
+    background: #878eb1; /* Dark red background */
+    border-radius: 5px; /* Rounded corners */
+    width: calc(50% - 40px); /* Responsive width calculation */
+    padding: 20px; /* Padding inside the section */
+    position: relative; /* Positioning context for pseudo-elements */
+}
+
+/* Decorative elements before each section */
+.edutime .wrapper .row section::before {
+    position: absolute; /* Absolute positioning */
+    content: ""; /* Empty content for decorative element */
+    height: 15px; /* Height of the decorative element */
+    width: 15px; /* Width of the decorative element */
+    background: #3f4874; /* White color */
+    top: 28px; /* Distance from the top */
+    z-index: -1; /* Position behind the section */
+    transform: rotate(45deg); /* Rotate to form a diamond shape */
+}
+
+/* Adjust position of decorative elements based on row */
+.edutime .row-1 section::before {
+    right: -7px; /* Position for row-1 */
+}
+
+.edutime .row-2 section::before {
+    left: -7px; /* Position for row-2 */
+}
+
+/* Icon and scroll icon styles */
+.edutime .row section .icon,
+.edutime .center-line .scroll-icon {
+    position: absolute; /* Absolute positioning */
+    background: #ffffff; /* Light grey background */
+    height: 40px; /* Height of the icon */
+    width: 40px; /* Width of the icon */
+    text-align: center; /* Center text inside */
+    line-height: 40px; /* Vertical alignment of text */
+    border-radius: 50%; /* Circular shape */
+    color: #3f4874; /* Darker red color */
+    font-size: 17px; /* Font size for icons */
+    box-shadow: 0 0 0 4px #3f4874, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); /* Shadow effects */
+}
+
+/* Scroll icon positioning */
+.edutime .center-line .scroll-icon {
+    bottom: 0px; /* Positioned at the bottom */
+    left: 50%; /* Center horizontally */
+    font-size: 25px; /* Font size for scroll icon */
+    transform: translateX(-50%); /* Center adjustment */
+}
+
+/* Icon positioning for row-1 */
+.edutime .row-1 section .icon {
+    top: 15px; /* Distance from the top */
+    right: -60px; /* Position to the right */
+}
+
+/* Icon positioning for row-2 */
+.edutime .row-2 section .icon {
+    top: 15px; /* Distance from the top */
+    left: -60px; /* Position to the left */
+}
+
+/* Flexbox styles for section details and bottom links */
+.edutime .row section .details,
+.edutime .row section .bottom {
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+/* Title styles within details */
+.edutime .row section .details .title {
+    font-size: 22px; /* Font size for title */
+    font-weight: 600; /* Bold text */
+}
+
+/* Paragraph styles */
+.edutime .row section p {
+    margin: 10px 0 17px 0; /* Margin for paragraphs */
+}
+
+/* Bottom link styles */
+.edutime .row section .bottom a {
+    text-decoration: none; /* Remove underline */
+    background: #ffffff; /* Light red background */
+    color: #3f4874; /* White text */
+    padding: 7px 15px; /* Padding inside links */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: 400; /* Normal font weight */
+    transition: all 0.3s ease; /* Transition effect for hover */
+}
+
+/* Link hover effect */
+.edutime .row section .bottom a:hover {
+    transform: scale(0.97); /* Slightly reduce size on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media(max-width: 790px) {
+    .edutime .wrapper .center-line {
+        left: 40px; /* Adjust center line position */
+    }
+    .edutime .wrapper .row {
+        margin: 30px 0 3px 60px; /* Adjust row margin */
+    }
+    .edutime .wrapper .row section {
+        width: 100%; /* Full width for sections */
+    }
+    .edutime .row-1 section::before {
+        left: -7px; /* Adjust before position */
+    }
+    .edutime .row-1 section .icon {
+        left: -60px; /* Adjust icon position */
+    }
+}
+
+/* Styles for very small screens */
+@media(max-width: 440px) {
+    .edutime .wrapper .center-line,
+    .edutime .row section::before,
+    .edutime .row section .icon {
+        display: none; /* Hide center line, before elements, and icons */
+    }
+    .edutime .wrapper .row {
+        margin: 10px 0; /* Adjust row margin */
+    }
+}
