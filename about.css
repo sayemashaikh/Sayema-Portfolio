@@ -525,13 +525,13 @@ footer .text span a:hover {
 }
 
 /* Styles for very small screens */
-@media(max-width: 440px) {
+@media(max-width: 70px) {
     .edutime .wrapper .center-line,
     .edutime .row section::before,
     .edutime .row section .icon {
         display: none; /* Hide center line, before elements, and icons */
     }
     .edutime .wrapper .row {
-        margin: 10px 0; /* Adjust row margin */
+        margin: 0px 0; /* Adjust row margin */
     }
 }
