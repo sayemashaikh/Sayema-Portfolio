@@ -525,7 +525,7 @@ footer .text span a:hover {
 }
 
 /* Styles for very small screens */
-@media(max-width: 70px) {
+@media(max-width:200px) {
     .edutime .wrapper .center-line,
     .edutime .row section::before,
     .edutime .row section .icon {
